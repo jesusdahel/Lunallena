@@ -735,7 +735,15 @@ figure[data-test="now-playing-image"] {
     position: relative;
     z-index: 2;
 }
-
+[data-test="footer-player"] {
+    position: fixed !important;
+    left: 1vw !important;
+    right: 1vw !important;
+    transform: none !important;
+    width: auto !important;
+    bottom: 2vh !important;
+    margin: 0 !important;
+}
 /* Tooltips */
 [class*="_marketTooltipContainer_"] {
     background-color: var(--bg-glass-dark);
