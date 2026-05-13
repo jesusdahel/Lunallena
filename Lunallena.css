@@ -785,3 +785,14 @@ figure[data-test="now-playing-image"] {
     background-color: rgba(0, 0, 0, 0.85) !important;
     backdrop-filter: none !important;
 }
+
+/* Quitar el Text Glow de las descripciones (mantener solo en letras de canciones) */
+[class*="_dataContainer_"],
+[class*="_dataContainer_"] *,
+[class*="artistBio"],
+[class*="artistBio"] *,
+[data-test="artist-bio"],
+[data-test="artist-bio"] * {
+    text-shadow: none !important;
+    filter: none !important;
+}
