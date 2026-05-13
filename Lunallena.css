@@ -500,7 +500,9 @@ div[data-test="query-suggestions"] div[class*="_icon_"] {
     max-width: 50%;
     margin-bottom: 10px;
     border: var(--border);
-    backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.85);
+    position: relative;
+    z-index: 10;
 }
 
 [class*="backgroundBlur"] {
@@ -754,3 +756,32 @@ figure[data-test="now-playing-image"] {
     display: none;
 }
 
+
+/* =========================================================
+   FIXES PERSONALIZADOS
+   ========================================================= */
+
+/* Centrar verticalmente el album art en Now Playing */
+[class*="_nowPlayingContainer_"] figure[data-test="now-playing-image"],
+[data-test="now-playing"] figure[data-test="now-playing-image"] {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    align-self: center !important;
+}
+
+[class*="_nowPlayingContainer_"] [class*="_imageContainer_"],
+[data-test="now-playing"] [class*="_imageContainer_"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Descripción del artista por encima de la portada del album (sin duplicación) */
+[class*="artistBio"],
+[data-test="artist-bio"],
+[class*="_artistBio_"] {
+    position: relative !important;
+    z-index: 100 !important;
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: none !important;
+}
