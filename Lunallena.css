@@ -796,7 +796,31 @@ figure[data-test="now-playing-image"] {
     z-index: 9999 !important;
 }
 
+/* Eliminar TODAS las posibles causas de duplicación visual en el popup */
 [data-test="artist-info-card"],
-[data-test="artist-info-card"] * {
+[data-test="artist-info-card"] *,
+[data-test="artist-info-card"] p,
+[data-test="artist-info-card"] span,
+[data-test="artist-info-card"] div,
+[data-test="artist-info-card"] a {
     text-shadow: none !important;
+    -webkit-text-stroke: 0 !important;
+    -webkit-text-stroke-width: 0 !important;
+    filter: none !important;
+    animation: none !important;
+    text-decoration: none !important;
+}
+
+/* Eliminar pseudo-elementos que podrían duplicar */
+[data-test="artist-info-card"]::before,
+[data-test="artist-info-card"]::after,
+[data-test="artist-info-card"] *::before,
+[data-test="artist-info-card"] *::after {
+    text-shadow: none !important;
+    content: none !important;
+}
+
+/* Subir un poco el album art en Now Playing para separarlo del reproductor */
+figure[data-test="now-playing-image"] {
+    margin-bottom: 60px !important;
 }
