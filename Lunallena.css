@@ -786,13 +786,7 @@ figure[data-test="now-playing-image"] {
     backdrop-filter: none !important;
 }
 
-/* Quitar el Text Glow de las descripciones (mantener solo en letras de canciones) */
-[class*="_dataContainer_"],
-[class*="_dataContainer_"] *,
-[class*="artistBio"],
-[class*="artistBio"] *,
-[data-test="artist-bio"],
-[data-test="artist-bio"] * {
+/* Quitar el Text Glow de TODO menos las letras de canciones */
+*:not([class*="lyric"]):not([class*="Lyric"]):not([class*="_lyricLine_"]):not([data-test*="lyric"]) {
     text-shadow: none !important;
-    filter: none !important;
 }
