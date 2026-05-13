@@ -513,7 +513,7 @@ div[data-test="query-suggestions"] div[class*="_icon_"] {
 
 [data-test="footer-player"] {
     position: fixed;
-    left: 70%;
+    left: 50%;
     transform: translateX(-50%);
     width: 98vw;
     height: 100px;
@@ -542,51 +542,13 @@ div[data-test="query-suggestions"] div[class*="_icon_"] {
     z-index: 1;
 }
 
-[aria-label="Progress bar"] {
-    position: fixed;
-    top: -30px;
-    width: 98vw;
-    height: 50px;
-
-}
-
 [class*="_range_"] {
     background: transparent;
     border-radius: 20px;
 }
 
-[data-test="progress-indicator"] {
-    background-color: rgba(255, 255, 255, 0.07);
-}
-
-[data-test="interaction-layer"] {
-    height: 25px;
-    transform: translateY(-50px);
-    pointer-events: auto;
-
-}
-
-#progressBar > div > [class*="toolTip"] {
-    bottom: 112px !important;
-    scale: 1;
-    overflow: visible;
-    background-color: var(--bg-solid);
-    color: white;
-    border: var(--border);
-    height: 25px;
-}
-
 [class*="_progress_"] > [data-test="current-time"] {
-    position: absolute;
-    margin-left: -45px;
-    margin-top: 15px;
     color: var(--accent);
-}
-
-[class*="_progress_"] > [data-test="duration"] {
-    position: absolute;
-    margin-left: 47px;
-    margin-top: 15px;
 }
 
 [data-test="left-column-footer-player"],
@@ -642,9 +604,8 @@ button[aria-label="Play queue"] {
 }
 
 [class*="nativeRangeContainer"] {
-    border: var(--border);
+    border: none;
     box-shadow: none;
-    transform: translateY(-20px) scale(1.15);
 }
 
 [class*="nativeRangeContainer"]::after {
@@ -795,61 +756,3 @@ figure[data-test="now-playing-image"] {
     display: none;
 }
 
-/* ============= FIX BARRA DE REPRODUCCION ============= */
-/* ============= FIX FOOTER PLAYER Y BARRA DE REPRODUCCION ============= */
-
-[data-test="footer-player"] {
-    position: fixed !important;
-    left: 1vw !important;
-    right: 1vw !important;
-    transform: none !important;
-    width: auto !important;
-    bottom: 2vh !important;
-    margin: 0 !important;
-
-}
-/* ============= FIX BARRA DE REPRODUCCION ============= */
-
-[aria-label="Progress bar"] {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    width: auto !important;
-    height: auto !important;
-    margin: 0 !important;
-    transform: none !important;
-}
-
-[data-test="interaction-layer"] {
-    transform: none !important;
-    height: auto !important;
-    position: static !important;
-}
-
-[class*="nativeRangeContainer"] {
-    transform: none !important;
-    height: auto !important;
-    border: var(--border) !important;
-}
-
-[class*="_range_"] {
-    border-radius: 3px !important;
-}
-
-[data-test="progress-indicator"] {
-    background-color: rgba(255, 255, 255, 0.15) !important;
-}
-
-[class*="_progress_"] > [data-test="current-time"],
-[class*="_progress_"] > [data-test="duration"] {
-    position: static !important;
-    margin: 0 6px !important;
-    color: var(--accent) !important;
-}
-
-[class*='_knob_'] {
-    width: 12px !important;
-    height: 12px !important;
-    margin: 0 !important;
-    transform: none !important;
-}
