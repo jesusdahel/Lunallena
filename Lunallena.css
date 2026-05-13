@@ -513,10 +513,8 @@ div[data-test="query-suggestions"] div[class*="_icon_"] {
 
 [data-test="footer-player"] {
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 98vw;
-    height: 100px;
+    left: 1vw;
+    right: 1vw;
     bottom: 2vh;
     border-radius: 20px;
     background-color: var(--bg-glass-light) !important;
@@ -754,15 +752,5 @@ figure[data-test="now-playing-image"] {
 [class*="_tooltipText_"]::after,
 [class*="_sidebarTooltip_"]::after {
     display: none;
-}
-
-[data-test="footer-player"] {
-    position: fixed !important;
-    left: 1vw !important;
-    right: 1vw !important;
-    transform: none !important;
-    width: auto !important;
-    bottom: 2vh !important;
-    margin: 0 !important;
 }
 
