@@ -790,3 +790,22 @@ figure[data-test="now-playing-image"] {
 *:not([class*="lyric"]):not([class*="Lyric"]):not([class*="_lyricLine_"]):not([data-test*="lyric"]) {
     text-shadow: none !important;
 }
+
+/* Card de descripción del artista (popup al hover sobre el avatar) */
+[data-test="artist-info-card"],
+[data-test="artist-info-card"] *,
+[data-test="artist-info"] [class*="_card_"],
+[data-test="artist-info"] [class*="_card_"] * {
+    text-shadow: none !important;
+    filter: none !important;
+}
+
+[data-test="artist-info-card"],
+[data-test="artist-info"] [class*="_card_"] {
+    position: relative !important;
+    z-index: 9999 !important;
+    background-color: rgba(0, 0, 0, 0.92) !important;
+    backdrop-filter: blur(15px) !important;
+    border-radius: 12px !important;
+    border: var(--border) !important;
+}
