@@ -791,21 +791,12 @@ figure[data-test="now-playing-image"] {
     text-shadow: none !important;
 }
 
-/* Card de descripción del artista (popup al hover sobre el avatar) */
-[data-test="artist-info-card"],
-[data-test="artist-info-card"] *,
-[data-test="artist-info"] [class*="_card_"],
-[data-test="artist-info"] [class*="_card_"] * {
-    text-shadow: none !important;
-    filter: none !important;
+/* Popup de info del artista: SOLO por encima del album, sin romper layout interno */
+[data-test="artist-info-card"] {
+    z-index: 9999 !important;
 }
 
 [data-test="artist-info-card"],
-[data-test="artist-info"] [class*="_card_"] {
-    position: relative !important;
-    z-index: 9999 !important;
-    background-color: rgba(0, 0, 0, 0.92) !important;
-    backdrop-filter: blur(15px) !important;
-    border-radius: 12px !important;
-    border: var(--border) !important;
+[data-test="artist-info-card"] * {
+    text-shadow: none !important;
 }
