@@ -544,9 +544,10 @@ div[data-test="query-suggestions"] div[class*="_icon_"] {
 
 [aria-label="Progress bar"] {
     position: fixed;
-    top: -75px;
+    top: -30px;
     width: 98vw;
-    height: 100px;
+    height: 50px;
+
 }
 
 [class*="_range_"] {
@@ -560,8 +561,9 @@ div[data-test="query-suggestions"] div[class*="_icon_"] {
 
 [data-test="interaction-layer"] {
     height: 25px;
-    transform: translateY(-115px);
+    transform: translateY(-50px);
     pointer-events: auto;
+
 }
 
 #progressBar > div > [class*="toolTip"] {
