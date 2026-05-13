@@ -796,6 +796,17 @@ figure[data-test="now-playing-image"] {
 }
 
 /* ============= FIX BARRA DE REPRODUCCION ============= */
+/* ============= FIX FOOTER PLAYER Y BARRA DE REPRODUCCION ============= */
+
+[data-test="footer-player"] {
+    position: fixed !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    width: 98vw !important;
+    margin: 0 !important;
+    bottom: 2vh !important;
+}
 
 [aria-label="Progress bar"] {
     position: absolute !important;
