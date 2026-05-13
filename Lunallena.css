@@ -513,7 +513,7 @@ div[data-test="query-suggestions"] div[class*="_icon_"] {
 
 [data-test="footer-player"] {
     position: fixed;
-    left: 50%;
+    left: 70%;
     transform: translateX(-50%);
     width: 98vw;
     height: 100px;
