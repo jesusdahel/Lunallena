@@ -822,5 +822,5 @@ figure[data-test="now-playing-image"] {
 
 /* Subir un poco el album art en Now Playing para separarlo del reproductor */
 figure[data-test="now-playing-image"] {
-    margin-bottom: 60px !important;
+    margin-bottom: 80px !important;
 }
